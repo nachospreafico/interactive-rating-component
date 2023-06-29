@@ -1,0 +1,236 @@
+@font-face {
+  font-family: Overpass;
+  src: url("./assets/fonts/Overpass-VariableFont_wght.ttf");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: Overpass;
+}
+
+.container {
+  background: rgb(37, 41, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 41, 51, 1) 0%,
+    rgba(24, 30, 38, 1) 100%
+  );
+  border-radius: 5%;
+  position: relative;
+}
+
+.title {
+  color: white;
+  margin: 5% 0 5% 0;
+}
+
+.description {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.ratings-container {
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.submit-btn {
+  font-family: Overpass;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 20px;
+  font-weight: 700;
+  width: 100%;
+  padding: 3% 0 3% 0;
+  margin-top: 7%;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  border: 0.5px solid hsl(25, 97%, 53%);
+  color: hsl(25, 97%, 53%);
+}
+
+.rating-num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #262f38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-num:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.success-container {
+  background: rgb(37, 41, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 41, 51, 1) 0%,
+    rgba(24, 30, 38, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.selected-rating {
+  background-color: #262f38;
+  padding: 2% 0 2% 0;
+  width: 65%;
+  text-align: center;
+  border-radius: 25px;
+  color: hsl(25, 97%, 53%);
+  margin-top: 8%;
+}
+
+.thank-you {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.success-msg {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    padding: 5%;
+  }
+
+  .container {
+    padding: 8%;
+  }
+
+  .star-container {
+    padding: 3%;
+    border-radius: 50%;
+    background-color: #262f38;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .submit-btn {
+    font-family: Overpass;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    margin-top: 7%;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  body {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 5%;
+    margin-bottom: 2%;
+    width: 70%;
+  }
+
+  .star-container {
+    height: 50px;
+    width: 50px;
+    background-color: #262f38;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  body {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 3%;
+    margin-bottom: 2%;
+    width: 40%;
+  }
+
+  .star-container {
+    height: 50px;
+    width: 50px;
+    background-color: #262f38;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 25%;
+    padding: 2%;
+    margin: 10% auto 2% auto;
+  }
+
+  .star-container {
+    height: 50px;
+    width: 50px;
+    background-color: #262f38;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
